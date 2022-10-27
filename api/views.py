@@ -4,9 +4,9 @@ from .models import Profile
 from .serializers import ProfileSerializer
 
 @api_view(['GET'])
-def getProfile(request):
-    profile = Profile.objects.all()
-    serializer = ProfileSerializer(profile, many=True)
+def getProfile(request, pk):
+    profile = Profile.objects.get(id=pk)
+    serializer = ProfileSerializer(profile)
     return Response(serializer.data)
 
 

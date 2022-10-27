@@ -2,5 +2,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path("", views.getProfile, name='getProfile'),
+    path("<int:pk>/", views.getProfile, name='getProfile'),
 ]
