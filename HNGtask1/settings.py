@@ -25,8 +25,7 @@ SECRET_KEY = "django-insecure-8_0#-cz9#t8_kwvmv+z!cnlx5m&%xkn*iv#efl5ao23r^7&65)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ["hng9task.herokuapp.com", "127.0.0.1"]
 
 # Application definition
 
@@ -107,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = "UTC"
+TIME_ZONE = "Africa/Lagos"
 
 USE_I18N = True
 
@@ -116,6 +115,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
+
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 STATIC_URL = "static/"
 
