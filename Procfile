@@ -1,0 +1,1 @@
+web: gunicorn HNGtask1.wsgi --log-file -
